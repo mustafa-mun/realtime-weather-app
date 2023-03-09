@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="/assets/cloudy.png">
-  <title>Weather App</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/cloudy.png" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo-container">
+        <img src="assets/climatology.png" alt="weather-logo" />
+        <p>WEATHER APP</p>
+      </div>
+    </header>
 
-  <header>
-    <div class="header-logo-container">
-      <img src="assets/climatology.png" alt="weather-logo">
-      <p>WEATHER APP</p>
-    </div>
-  </header>
+    <section class="input-section">
+      <div>
+        <input type="text" placeholder="City..." />
+      <!-- <img src="assets/search.png" alt=""> -->
+      <button id="search-btn">Search</button>
+      </div>
+      <p id="error-msg"></p>
+    </section>
 
-  <section class="input-section">
-    <input type="text" placeholder="City...">
-    <!-- <img src="assets/search.png" alt=""> -->
-    <button id="search-btn">Search</button>
-  </section>
+    <!-- <main class="forecast-container">
+    <p class="xl-text">Ankara</p>
+    <p class="big-text">14.56 &degC</p>
+    <p>Feels like: 13.25 &degC</p>
+    <p>Humidty: 45%</p>
+    <p>Wind: 1.34 km/h</p>
+  </main> -->
 
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

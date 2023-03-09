@@ -43,6 +43,7 @@ header .header-logo-container p {
 .input-section {
   margin-top: 5vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   animation: 0.9s ease-in-out flash;
 }
@@ -78,10 +79,9 @@ header .header-logo-container p {
   background-color: rgb(243, 240, 240);
   color: black;
 }
-.input-section img {
-  margin-left: 15px;
-  width: 24px;
-  cursor: pointer;
+.input-section p {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .forecast-container {
@@ -90,12 +90,23 @@ header .header-logo-container p {
   flex-direction: column;
   align-items: center;
   padding: 25px;
-  width: 26vw;
-  height: 350px;
-  min-width: 340px;
+  width: 17vw;
+  min-width: 300px;
   border-radius: 12px;
   margin-top: 8vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.forecast-container p {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 19px;
+  color: rgb(243, 240, 240);
+}
+.forecast-container .xl-text {
+  font-size: 42px;
+}
+.forecast-container .big-text {
+  font-size: 32px;
 }
 
 @keyframes slideTop {
@@ -112,5 +123,30 @@ header .header-logo-container p {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .header-logo-container p {
+    font-size: 26px;
+  }
+  header .header-logo-container img {
+    width: 50px;
+    margin-bottom: 18px;
+  }
+  .input-section input {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+  .input-section #search-btn {
+    padding: 8px 11px;
+  }
+  .forecast-container p {
+    font-size: 18px;
+  }
+  .forecast-container .xl-text {
+    font-size: 32px;
+  }
+  .forecast-container .big-text {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
