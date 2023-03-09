@@ -24,6 +24,7 @@ const variables = (() => {
 
 const dom = (() => {
   const forecastDom = (cityName, temp, feelsLike, humidity, wind) => {
+    // Create forecast container element
     const main = document.createElement("main");
     const cityNameText = document.createElement("p");
     const tempText = document.createElement("p");
@@ -64,6 +65,7 @@ function kToCTempConversion(k) {
 }
 
 async function fetchWeatherApi(url) {
+  // Fetch api data function
   try {
     const fetchApi = await fetch(url);
     const response = await fetchApi.json();
